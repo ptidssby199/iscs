@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BuyingReclassShipping</title>
+
+<!--
+  ============================================================
+  CARA PAKAI
+  ============================================================
+  1. Ganti nilai APP_URL di bawah ini dengan URL Web App hasil
+     deploy Google Apps Script kamu, formatnya seperti:
+     https://script.google.com/macros/s/AKfycb.../exec
+
+     Cara ambil URL-nya: buka project Apps Script -> Deploy ->
+     Manage deployments -> salin "Web app URL".
+
+  2. Upload file ini (index.html) ke root repo GitHub kamu,
+     lalu aktifkan GitHub Pages (Settings -> Pages -> Deploy
+     from branch -> pilih branch & folder root).
+
+  3. Selesai -- alamat GitHub Pages kamu (mis. https://
+     namakamu.github.io/nama-repo/) otomatis akan redirect
+     ke aplikasi Apps Script ini.
+  ============================================================
+-->
+<script>
+  var APP_URL = "https://script.google.com/macros/s/AKfycbw7_S76tbUuIbAlrb8gVNwgkiTmxSH0NkQSeJmhBJ1Cr8WxOWV1QQ-R4VxSO9TalicTVg/exec";
+  if (APP_URL.indexOf("http") === 0) {
+    window.location.replace(APP_URL);
+  }
+</script>
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbw7_S76tbUuIbAlrb8gVNwgkiTmxSH0NkQSeJmhBJ1Cr8WxOWV1QQ-R4VxSO9TalicTVg/exec">
+
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #0F1723; color: #EDEFF2; font-family: 'Segoe UI', Inter, Arial, sans-serif;
+    text-align: center; padding: 24px;
+  }
+  .box { max-width: 420px; }
+  .spinner {
+    width: 42px; height: 42px; margin: 0 auto 22px; border-radius: 50%;
+    border: 4px solid rgba(255,255,255,.15); border-top-color: #E0A93E;
+    animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  h1 { font-size: 18px; margin: 0 0 8px; font-weight: 700; }
+  p { font-size: 14px; color: #A8B0BC; line-height: 1.5; margin: 0 0 18px; }
+  a.manual-link {
+    display: inline-block; padding: 10px 20px; border-radius: 8px;
+    background: #E0A93E; color: #211200; font-weight: 700; text-decoration: none; font-size: 13.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <div class="spinner"></div>
+    <h1>Mengalihkan ke aplikasi...</h1>
+    <p>Jika halaman tidak berpindah otomatis dalam beberapa detik, klik tombol di bawah ini.</p>
+    <a class="manual-link" id="manualLink" href="https://script.google.com/macros/s/AKfycbw7_S76tbUuIbAlrb8gVNwgkiTmxSH0NkQSeJmhBJ1Cr8WxOWV1QQ-R4VxSO9TalicTVg/exec">Buka Aplikasi</a>
+  </div>
+</body>
+</html>
